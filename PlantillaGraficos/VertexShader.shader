@@ -6,7 +6,7 @@
 
 //Atributos de entrada (son los que vienen desde c++)
 in vec3 posicion;
-in vec4 color;
+in vec4 colorx;
 
 //Atributos de salida (Van hacia el fragment shader)
 out vec4 fragmentColor;
@@ -18,6 +18,6 @@ void main() {
 	gl_Position.w = 1.0;
 
 	//Establecer valores de atributos de salida
-	fragmentColor = color;
+	fragmentColor = colorx;
 
 }
